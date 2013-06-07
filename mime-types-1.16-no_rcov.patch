@@ -1,0 +1,20 @@
+--- mime-types-1.16/Rakefile.orig	2009-12-30 01:26:20.899295211 -0800
++++ mime-types-1.16/Rakefile	2009-12-30 01:31:15.779210960 -0800
+@@ -46,17 +46,6 @@
+   p.spec_extras[:extra_rdoc_files] = MANIFEST.grep(/txt$/) - ["Manifest.txt"]
+ end
+ 
+-begin
+-  require 'rcov/rcovtask'
+-  Rcov::RcovTask.new do |t|
+-    t.libs << 'test'
+-    t.test_files = hoe.test_files
+-    t.verbose = true
+-  end
+-rescue LoadError
+-  puts "RCov is not available. In order to run rcov, you must: sudo gem install spicycode-rcov"
+-end
+-
+ =begin
+   require 'cucumber/rake/task'
+   Cucumber::Rake::Task.new(:features)
