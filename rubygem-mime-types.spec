@@ -8,7 +8,7 @@
 Summary: Return the MIME Content-Type for a given filename
 Name: rubygem-%{gemname}
 Version: 1.23
-Release: 1%{?dist}
+Release: 2%{?dist}
 Group: Development/Languages
 License: GPL+ or Ruby or Artistic
 URL: http://mime-types.rubyforge.org/
